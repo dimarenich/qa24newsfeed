@@ -22,7 +22,7 @@ class QANewsBot:
         self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36'}
         # self.session = requests.Session()
 
-    def get_top_news(self) -> List[str]:
+    def get_news(self) -> List[str]:
         all_entries = []
         now = datetime.now(timezone.utc)
         yesterday = now - timedelta(hours=24)
