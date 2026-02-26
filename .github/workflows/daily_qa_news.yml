@@ -2,7 +2,7 @@ name: Daily QA News Bot
 
 on:
   schedule:
-    - cron: '30 5 * * *'  # run at 05:30 UTC
+    - cron: '30 4 * * *'  # run at 04:30 UTC
   workflow_dispatch:      # available run manually for tests
 
 jobs:

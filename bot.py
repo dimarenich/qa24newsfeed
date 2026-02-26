@@ -20,7 +20,13 @@ class QANewsBot:
             "http://feeds.feedburner.com/Testhead",
             "https://lisacrispin.com/feed/",
             "http://feeds.feedburner.com/blogspot/RLXA",
+            "http://blog.aclairefication.com/feed/",
+            "https://www.offsec.com/rss.xml?utm_source=offsec/",
+            "https://visible-quality.blogspot.com/feeds/posts/default",
             # https://softwaretestingweekly.com/
+            # https://www.testmuai.com/newsletter/editions/
+            # https://atsqa.org/newsletter
+            # ----------------------------------------------------------
             # podcasts
             "https://rss.libsyn.com/shows/79576/destinations/364260.xml"            
         ]
