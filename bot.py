@@ -17,11 +17,10 @@ class QANewsBot:
         self.token = os.getenv("TELEGRAM_TOKEN")
         self.chat_id = os.getenv("CHAT_ID")
         self.feeds = [
-            "https://www.ministryoftesting.com/articles.rss",
-            "https://www.infoq.com/testing/feed/",
-            "https://sdtimes.com/category/software-quality/feed/",
-            "https://angryweasel.com/blog/rss",
-            "http://feeds.feedburner.com/blogspot/RLXA"
+            "https://www.ministryoftesting.com/contents/rss",
+            "https://feed.infoq.com/Testing/",
+            "https://feed.infoq.com/Testing/news/",
+            "https://sdtimes.com/category/software-quality/feed/"
         ]
         self.session = requests.Session()
 
