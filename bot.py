@@ -16,7 +16,13 @@ class QANewsBot:
         self.feeds = [
             "https://www.ministryoftesting.com/contents/rss",
             "https://feed.infoq.com/Testing/",
-            "https://sdtimes.com/category/software-quality/feed/"
+            "https://sdtimes.com/category/software-quality/feed/",
+            "http://feeds.feedburner.com/Testhead",
+            "https://lisacrispin.com/feed/",
+            "http://feeds.feedburner.com/blogspot/RLXA",
+            # https://softwaretestingweekly.com/
+            # podcasts
+            "https://rss.libsyn.com/shows/79576/destinations/364260.xml"            
         ]
         self.keywords = ["backend", "api", "ai", "lead", "performance", "security", "architecture"]
         self.blacklist = ["/jobs/", "/vacancies/", "career", "hiring", "recruitment"]
@@ -48,7 +54,7 @@ class QANewsBot:
                         if dt > yesterday:
                             score = sum(5 for kw in self.keywords if kw in title)
                             
-                            all_entries.append({
+                            final_news.append({
                                 'title': entry.title,
                                 'link': entry.link,
                                 'score': score,
