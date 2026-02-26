@@ -19,7 +19,6 @@ class QANewsBot:
         self.feeds = [
             "https://www.ministryoftesting.com/contents/rss",
             "https://feed.infoq.com/Testing/",
-            "https://feed.infoq.com/Testing/news/",
             "https://sdtimes.com/category/software-quality/feed/"
         ]
         self.session = requests.Session()
@@ -34,7 +33,7 @@ class QANewsBot:
                     news_items.append(f"🔹 *{entry.title}*\n{entry.link}")
             except Exception as e:
                 logger.error(f"Parsing error {url}: {e}")
-        return news_items[:3]
+        return news_items[:9]
 
     def send_to_telegram(self, message: str):
         if not self.token or not self.chat_id:
